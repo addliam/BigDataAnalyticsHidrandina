@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard Hidrandina</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-blue-800 via-indigo-800 to-cyan-700 min-h-screen text-white">
+
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between p-6 bg-white/5 backdrop-blur-md w-full z-50 top-0">
+        <div class="text-2xl font-bold">Hidrandina y Electronorte</div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="pt-32 px-6 flex flex-col items-center justify-center min-h-[calc(100vh-4rem)]">
+
+        <!-- Iframe Embed -->
+        <div
+            class="w-full max-w-6xl bg-white/10 p-4 rounded-2xl shadow-xl overflow-hidden relative aspect-[16/9] mb-10">
+            <iframe
+                src="https://lookerstudio.google.com/embed/reporting/21799049-0390-4562-8cfd-02e3e6f340ee/page/6oqQF"
+                class="absolute top-0 left-0 w-full h-full border-0" allowfullscreen
+                sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+            </iframe>
+        </div>
+
+        <!-- Botones -->
+        <div class="flex flex-wrap gap-6 justify-center mb-8">
+            <a href="./electronorte.html"
+                class="px-6 py-3 bg-white text-indigo-800 font-semibold rounded-full shadow-md hover:bg-gray-100 transition">Anterior
+                Dashboard</a>
+            <a href="./index.html"
+                class="px-6 py-3 bg-white text-indigo-800 font-semibold rounded-full shadow-md hover:bg-gray-100 transition">Inicio</a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full block mx-0 text-center py-6 bg-white/5 text-gray-400 border-t border-white/10">
+        Grupo 2
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Analytics QOSLO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-r from-blue-900 via-black to-blue-900 min-h-screen text-white">
+
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between p-6 bg-opacity-20 backdrop-blur-md fixed w-full z-50 top-0">
+        <div class="text-2xl font-bold">Hidrandina</div>
+        <div>
+            <a href="#dashboards" class="mx-3 hover:text-cyan-400 transition">Dashboards</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="flex flex-col items-center justify-center text-center pt-32 px-6">
+        <h1 class="text-5xl font-extrabold mb-4 animate-fade-in-down">Big Data Analytics de Hidrandina</h1>
+        <p class="text-lg mb-6 max-w-2xl animate-fade-in">Monitoreo de los indicadores de calidad y desempeño de
+            Hidrandina y Electronorte, a través de dashboards visuales y actualizados.</p>
+        <div class="flex space-x-6 animate-fade-in-up">
+            <a href="hidrandina.html"
+                class="px-8 py-3 bg-cyan-500 rounded-xl text-lg font-semibold hover:bg-cyan-600 transition shadow-xl">Dashboard
+                Hidrandina</a>
+            <a href="electronorte.html"
+                class="px-8 py-3 bg-amber-500 rounded-xl text-lg font-semibold hover:bg-amber-600 transition shadow-xl">Dashboard
+                Electronorte</a>
+        </div>
+    </section>
+
+    <!-- Contexto -->
+    <section id="contexto" class="mt-32 px-8 max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Historia del Proyecto</h2>
+        <p class="text-lg mb-4 text-gray-300">
+            Basado en el registro mensual del consumo eléctrico de clientes de Hidrandina en La Libertad, Áncash y
+            Cajamarca, con datos como tarifa, ubicación, fechas de facturación, importe y consumo (KWh), facilitando el
+            análisis energético y gestión comercial operativa.
+        </p>
+        <p class="text-lg text-gray-300">
+            La integración mediante Looker Studio asegura datos actualizados y accesibles desde cualquier dispositivo,
+            facilitando la toma de decisiones estratégicas.
+        </p>
+    </section>
+
+
+    <!-- Sección Empresas -->
+    <section id="dashboards" class="mt-32 px-8 max-w-6xl mx-auto text-center mb-32 justify-center">
+        <h2 class="text-3xl font-bold mb-8">Indicadores por Empresa</h2>
+
+        <div class="grid md:grid-cols-1 gap-8 items-center justify-items-center">
+
+            <!-- Hidrandina -->
+            <div
+                class="items-center justify-center max-w-[32rem] bg-white/10 p-4 rounded-2xl shadow-xl flex flex-col md:flex-row text-left">
+                <img src="./imgs/hidrandina_img.jpg" alt="Hidrandina"
+                    class="rounded-xl shadow-lg max-w-[150px] w-full md:w-auto md:mr-6 mb-4 md:mb-0">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-semibold mb-2">Hidrandina</h3>
+                    <p class="text-gray-300 mb-4 text-sm">Empresa regional de servicio público de electricidad que se
+                        dedica a la distribución y comercialización de energía eléctrica en las regiones de Ancash, La
+                        Libertad y parte de Cajamarca.</p>
+                    <a href="hidrandina.html"
+                        class="inline-block px-5 py-2 bg-cyan-500 rounded-xl text-base font-semibold hover:bg-cyan-600 transition">Ir
+                        al Dashboard</a>
+                </div>
+            </div>
+
+            <!-- Electronorte -->
+            <div
+                class="items-center justify-center max-w-[32rem] bg-white/10 p-4 rounded-2xl shadow-xl flex flex-col md:flex-row text-left">
+                <img src="./imgs/electronorte_img.jpg" alt="Electronorte"
+                    class="rounded-xl shadow-lg max-w-[150px] w-full md:w-auto md:mr-6 mb-4 md:mb-0">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-semibold mb-2">Electronorte</h3>
+                    <p class="text-gray-300 mb-4 text-sm">Empresa dedicada a la distribución de energía eléctrica en
+                        Lambayeque y Cajamarca, comprometida con el desarrollo sostenible del país.</p>
+                    <a href="electronorte.html"
+                        class="inline-block px-5 py-2 bg-amber-500 rounded-xl text-base font-semibold hover:bg-amber-600 transition">Ir
+                        al Dashboard</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full block mx-0 text-center py-6 bg-white/5 text-gray-400 border-t border-white/10">
+        Grupo 2
+    </footer>
+
+    <!-- Animaciones -->
+    <style>
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fade-in 1s ease forwards;
+        }
+
+        .animate-fade-in-up {
+            animation: fade-in 1s ease forwards;
+            animation-delay: 0.2s;
+        }
+
+        .animate-fade-in-down {
+            animation: fade-in 1s ease forwards;
+            animation-delay: 0.4s;
+        }
+    </style>
+
+</body>
+
+</html>
